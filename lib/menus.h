@@ -3,5 +3,6 @@
 
 void menu_inicial();
 void menu_operacao();
+void menu_Octal();
 
 #endif
