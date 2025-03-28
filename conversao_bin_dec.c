@@ -108,6 +108,30 @@ int main()
             }
 
             break;
+        case 4:
+        
+            menu_Octal();
+            scanf("%d",&opcao);
+    
+            int num;
+            switch (opcao)
+            {
+            case 1:
+                printf("Informe o numero decimal");
+                scanf("%d",&num);
+                int valorOctalReturn = DecimalOctal(num);
+                printf("Valor Octal %d\n",valorOctalReturn);
+                break;
+            case 2:
+                printf("Informe o numero Octal");
+                scanf("%d",&num);
+                int valorDecimalReturn = OctalDecimal(num);
+                printf("Valor Decimal %d\n",valorDecimalReturn);
+                break;
+            default:
+                break;
+            }
+            break;
         default:
             break;
         }
