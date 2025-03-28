@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "lib/menus.h"
 
 // função que lê a parte decimal fracionária e converte em binário
 void decbin_part_frac();
@@ -26,13 +27,7 @@ int main()
 
     while (1)
     {
-        printf("\n-------------BEM VINDO--------------\n");
-        printf("Digite a opcao desejada: \n");
-        printf("(1)converter binario para decimal\n");
-        printf("(2)fazer operacoes com binario\n");
-        printf("(3)converter decimal para binario\n");
-        printf("(4)Sair\n");
-
+        menu_inicial();
         scanf("%d", &opcao);
 
         if (opcao == 4)
@@ -61,11 +56,7 @@ int main()
             break;
 
         case 2:
-            printf("Qual operacao deseja fazer?\n");
-            printf("(1)Adicao\n");
-            printf("(2)Subtracao\n");
-            printf("(3)Multiplicacao\n");
-            printf("(4)Divisao\n");
+            menu_operacao();
             scanf("%d", &subopcao);
             float resultado;
             switch (subopcao)
