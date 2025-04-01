@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "lib/menus.h"
+#include "func/octal.h"
 
 // função que lê a parte decimal fracionária e converte em binário
 void decbin_part_frac();
@@ -30,7 +31,7 @@ int main()
         menu_inicial();
         scanf("%d", &opcao);
 
-        if (opcao == 4)
+        if (opcao == 5)
         {
             printf("Saindo do programa...\n");
             break;
