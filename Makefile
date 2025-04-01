@@ -1,10 +1,11 @@
-SRCS = Sistemas_numericos.c  $(wildcard lib/*.c)
-OBJS = $(SRCS: .c = .o)
+SRCS = Sistemas_numericos.c $(wildcard lib/*.c) $(wildcard func/*.c)
+OBJS = $(SRCS:.c=.o)
 
 programa: $(OBJS)
-	gcc $(OBJS) -o programa
+	@gcc $(OBJS) -o programa
 
 %.o: %.c
-	gcc -c $< -o $@
+	@gcc -c $< -o $@
+
 clean:
-    rm -f $(OBJS) programa
+	@rm -f $(OBJS) programa
