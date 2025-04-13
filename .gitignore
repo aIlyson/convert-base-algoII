@@ -1,0 +1,24 @@
+### C ###
+# prerequisites
+*.d
+
+# object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# kernel module compile results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# local History for Visual Studio Code
+.history/
+
+# dump file
+*.stackdump
